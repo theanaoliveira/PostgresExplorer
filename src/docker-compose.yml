@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  postgres-webapi:
+    image: ${DOCKER_REGISTRY-}postgres-webapi
+    build:
+      context: .
+      dockerfile: PostgresExplorer.Webapi/Dockerfile
+    networks:
+      - postgres-network
+
+networks:
+  postgres-network:

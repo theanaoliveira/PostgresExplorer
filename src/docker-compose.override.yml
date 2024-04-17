@@ -1,0 +1,31 @@
+version: '3.7'
+
+services:
+  postgres-webapi:
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DBCONN: Host=postgresql;Port=5432;Database=postgres;User Id=postgres;Password=postgres
+    ports:
+      - "9003:80"
+    networks:
+      - postgres-network
+
+  postgresql:
+    image: postgres:9.5
+    restart: always
+    environment:  
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./dockerfiles/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - postgres-network
+volumes:
+  pgdata: 
+
+networks:
+  postgres-network:

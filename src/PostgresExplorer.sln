@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostgresExplorer.Webapi", "PostgresExplorer.Webapi\PostgresExplorer.Webapi.csproj", "{18D545DA-07B3-4BB3-872B-D68B2466B2F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostgresExplorer.Webapi", "PostgresExplorer.Webapi\PostgresExplorer.Webapi.csproj", "{18D545DA-07B3-4BB3-872B-D68B2466B2F4}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{7EACE4D1-136B-45B1-90A8-564BC0750861}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{18D545DA-07B3-4BB3-872B-D68B2466B2F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18D545DA-07B3-4BB3-872B-D68B2466B2F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18D545DA-07B3-4BB3-872B-D68B2466B2F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EACE4D1-136B-45B1-90A8-564BC0750861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EACE4D1-136B-45B1-90A8-564BC0750861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EACE4D1-136B-45B1-90A8-564BC0750861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EACE4D1-136B-45B1-90A8-564BC0750861}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86D2BC27-8D8B-4136-9816-411061611546}
 	EndGlobalSection
 EndGlobal
